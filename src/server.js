@@ -7,7 +7,6 @@ const server = http.createServer(app);
 const createServer = async () => {
   try {
     console.log("Starting server...");
-
     await server.listen(port);
     console.log(`Server Running on Port: ${port}, ${new Date().getTime()}`);
   } catch (e) {
